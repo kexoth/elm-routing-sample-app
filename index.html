@@ -11117,8 +11117,12 @@ var _user$project$Main$link = F2(
 					_user$project$Routes$toString(route)),
 				_1: {
 					ctor: '::',
-					_0: _elm_lang$html$Html_Events$onClick(
-						_user$project$Main$RouteTo(route)),
+					_0: A3(
+						_elm_lang$html$Html_Events$onWithOptions,
+						'click',
+						opts,
+						_elm_lang$core$Json_Decode$succeed(
+							_user$project$Main$RouteTo(route))),
 					_1: {ctor: '[]'}
 				}
 			},
